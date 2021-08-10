@@ -25,6 +25,17 @@
  * Server where the conference should take place.
  */
 @property (nonatomic, copy, nullable) NSURL *serverURL;
+
+/**
+ * Username for the conference.
+ */
+@property (nonatomic, copy, nullable) NSURL *userName;
+
+/**
+ * Password of the conference .
+ */
+@property (nonatomic, copy, nullable) NSURL *passWord;
+
 /**
  * Room name.
  */
@@ -76,6 +87,8 @@
 @interface JitsiMeetConferenceOptions : NSObject
 
 @property (nonatomic, copy, nullable, readonly) NSURL *serverURL;
+@property (nonatomic, copy, nullable, readonly) NSURL *userName;
+@property (nonatomic, copy, nullable, readonly) NSURL *passWord;
 
 @property (nonatomic, copy, nullable, readonly) NSString *room;
 @property (nonatomic, copy, nullable, readonly) NSString *subject;
